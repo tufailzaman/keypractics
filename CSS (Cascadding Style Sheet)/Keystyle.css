@@ -1,0 +1,59 @@
+   /* Three types of css
+   external : outside of html file and has its own file with extension (.css)
+   Internal: Written in head of HTML file below external css link in style tag (<style>)
+   inline : Written in tag of HTML file and more powerful than internal, more than external
+       There are three selectors
+       Tag Selectors
+       ID Selectors
+       Class Selectors
+   */
+   /* Tag Selectors */
+   body{
+    background-color: lightgray;
+   }
+   marquee{
+    height: 30px;
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    background-color:red ;
+   }
+   input{
+    background-color: lightgray;
+   }
+   p{
+    font-size: 20px;
+    font-style: italic;
+    color: pink;
+    background-color: blueviolet;
+   }
+   select{
+    background-color: lightgray;
+
+   }
+   /* ID Selector */
+   #footer{
+    background-color: brown;
+    border: 1px solid black;
+    width: 1320px;
+    height: 40px;
+    text-align: center;
+    color:yellow;
+    font-size: larger;
+    font-style: italic;
+    margin-top: 10px;   
+
+}
+/* Class Selector */
+   /* borderstyle=: dashed,dotted,double,groove,hidden */
+   .table {
+           border: 1px ;
+           border-color: red;
+           border-style: groove;
+           width: 500px;
+           height: 270px;
+           margin-top: 10px;
+           margin-left: 450px;
+           background-color: black;
+           color: yellow;
+   }
