@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div id="address"></div>
+    <script>
+        navigator.geolocation.getCurrentPosition((position) =>{
+         //   console.log(position);
+           const lat = position.coords.latitude;
+           const long = position.coords.longitude;
+          // console.log(`Lat ${lat} Long ${long}`)
+          fetch(`https://us1.locationiq.com/v1/reverse.php?
+          key=pk.2ce05a50d1ca31e503b2a60e82d6a395&lat=${lat}&lon=${long}&format=json`)
+          .then(res => res.json())
+          .then(json => {
+
+         //   const street = json.results[0].locations[0].street;
+         //   console.log(street);
+ //           console.log(json)
+
+ //console.log(json.address)
+ console.log(json.address.state)
+
+
+ //const h3 = document.createElement("h3")
+// h3.innerHTML = `Address: ${json.address.state}`  
+// document.getElementById("address").appendChild(h3)
+//          })         
+   })
+    </script>
+</body>
+</html>

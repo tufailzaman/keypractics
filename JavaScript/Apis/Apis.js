@@ -1,0 +1,1 @@
+//// https://us1.locationiq.com/v1/reverse.php?key=pk.2ce05a50d1ca31e503b2a60e82d6a3a5&lat=33.997914&lon=71.471239&format=json  ((((Whether API))))

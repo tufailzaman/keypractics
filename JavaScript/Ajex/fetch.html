@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>using Fetch</title>
+</head>
+<body>
+
+     <script>
+  //      fetch("https://jsonplaceholder.typicode.com/todos")
+  //     .then((res) => res.json())
+  //      .then(json => {
+   //         console.log(json)
+   //     })
+
+   const run = async () => {
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos")
+    const json = await res.json();
+    console.log(json)   
+}
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>
+            Using HTML
+        </title>
+        <!-- Icon -->
+        <link rel="shortcuticon" href="" type="image/icon" />
+        <link rel="stylesheet" href="" type="text/css" />
+        <style>
+
+        </style>
+    </head>
+    <body>
+<!-- Header Tags Heading of any paragraph or topic name
+They are only six in numbers -->
+        <h1>Pakistan</h1>
+        <h2>Pakistan</h2>
+        <h3>Pakistan</h3>
+        <h4>Pakistan</h4>
+        <h5>Pakistan</h5>
+        <h6>Pakistan</h6>
+<!-- Other Tags -->
+Tufail<sup>Zaman</sup>
+Amjad<sub>Khan</sub>
+
+        <!-- List -->
+    <!-- two types of list
+    1) order list (ol)
+    2) Unorder list (ul)-->
+<!-- type = "1,A,a,I,i" -->
+    <ol  start="2" type="i">
+        <li>Pakistan</li>
+        <li>India</li>
+        <li>Iran</li>
+    </ol>
+<!-- type ="circle, square , default,none,disc" -->
+     <ul type ="none">
+        <li>Pakistan</li>
+        <li>India</li>
+        <li>Saudi</li>
+    </ul>
+    <!-- For Space we will use &nbsp; tag if you want t gave space more than one time  -->
+       Tufail &nbsp;&nbsp;&nbsp;     Zaman
+       
+       <center>
+        Tufail Zaman
+       </center>
+       <!--Paragraph  -->
+      <p align = "justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, 
+          dignissimos labore ab minus earum, dolorum unde dolorem eaque nemo impedit rem quia temporibus quo adipisci incidunt placeat,
+           consectetur accusamus error.
+    </p>
+<!-- Marquee tag
+Stand for Moving from top to bottom and right to left
+-->
+<!-- direction = " left,right,up,down" behavior = "alternate, slide, scroll" -->
+<marquee scrollamount="19" direction = "left" height="40" width="700" behavior="slide" loop="3"
+onmouseover="stop()" onmouseout="start()">
+    Web Designing , HTML full Course is Here . Tufail Zaman Amjad Khan, Rashid Khan Habib 
+</marquee>
+
+<!-- table tag -->
+
+<table border="1">
+    <thead>
+        <tr>
+        <th>S.No</th>
+        <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>201168</td>
+            <td>Tufail Zaman</td>
+        </tr>
+        <tr>
+            <td>201187</td>
+            <td>Amjad Khan</td>
+        </tr>
+    </tbody>
+
+</table>
+
+<!-- Image tag 
+Tag of two types 
+1) pair tag : it is also closing tag . pair tag has starting and closing tag
+2) unpair tag : self closing tag  and its structure like as "<input  />"
+
+pair tag are table,form etc..
+unpair tag are input,img,br etc..
+-->
+ <img src="" width="200" height="200" allign="" />
+ 
+ <!-- Form Tag -->
+ <form>
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Tufail Zaman"  />
+    <label for="passwoed">Password</label>
+    <input type="password" id="password" placeholder="Password" />
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="tufailzaman789@gmail.com" />
+    <label for="gender">Gender</label>
+    <input type="radio" name="gender" value="male"  />Male
+    <input type="radio" name="gender" value="female"  />Female
+    <label for="hobies">Hobies</label>
+    <input type="checkbox" name="h1" value="book" />Reading Books
+    <input type="checkbox" name="h2" value="cricket" />Cricket
+    <input type="checkbox" name="h3" value="footcricket" />Foot Ball
+ </form>
+
+</body>
+</html>

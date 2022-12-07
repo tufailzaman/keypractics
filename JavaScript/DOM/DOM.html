@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button onclick="changedom()">Click</button>
+    <img id="img1" src="D:\Tufail Zaman pic.jpeg" width="100" height="100" />
+    <h1 id="head1">This is header 1 </h1>
+    <form id="f1" >
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username" />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+    </form> 
+    <p id="para1" style="color: red;" onclick="para(this)">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam doloribus tempore quibusdam voluptate commodi praesentium vitae est ratione corrupti, voluptas nesciunt provident illo earum labore atque asperiores neque. Alias, distinctio!
+    </p>
+  <p id="para"  style="color: green;" onclick="para(this)">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque cumque dolores nesciunt, maiores sunt ut quae nam quia magni, esse delectus cupiditate recusandae officia, nobis assumenda doloremque modi voluptatum?
+  </p>
+  <div id="new"></div>
+<ul id="item">
+  <li>Item</li>
+  <li>Item1</li>
+  <li>Item2</li>
+</ul>
+<h2 id = "h2">heading</h2>
+  <script>
+        
+       
+       const para = (para) => {
+//        console.log(para)
+
+  //   if(para.id == "para1"){
+  //      console.log("Paragraph No 1")
+  //   }
+  //   else {
+  //         console.log("Paragraph No 2")
+  //   }
+
+       }
+        const changedom = () => {
+
+const p = document.createElement("p");
+p.id = "abc";
+p.innerHTML = "This is New Paragraph";
+document.body.appendChild(p);
+
+//const t = document.createElement("p");
+//p.id = "bcd";
+//p.innerHTML = "Tufail Zaman"
+//const div = document.getElementById("news");
+//div.appenedChild(p);
+
+const li = document.createElement("li");
+li.textContent = "New Item";
+const a = document.getElementById("item");
+a.appendChild(li);
+
+const h2 = document.getElementById("h2");
+h2.setAttribute("class","heading");
+//           document.querySelector("#para1").style.color = "white";
+//          document.querySelector("#para1").style.backgroundColor = "green";
+//          document.querySelector("#para1").style.fontStyle = "italic";  
+//        const username = document.forms["f1"]["username"].value
+//        const password = document.forms["f1"]["password"].value
+//        console.log(username,password)
+           // document.getElementById("head1").innerHTML = "<u>Pakistan</u>";
+         //   document.getElementById("head1").innerText = "<u>Pakistan</u>";
+  //         const t = document.getElementById("head1").innerHTML
+    //       const cap = t.toUpperCase();
+      //     document.getElementById("head1").innerHTML = cap;   
+//      document.getElementById("img1").Width = "400";
+//      document.getElementById("img1").height = "200";
+         
+}
+
+
+
+</script>    
+</body>
+</html>

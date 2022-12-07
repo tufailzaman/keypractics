@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="loaddata()">Click</button>
+<div id="data"></div>
+<ul id="titles"></ul>
+<script>
+  
+  //      const loaddata = () => { 
+ //            const xhr = new XMLHttpRequest();
+ //           
+ //           xhr.onreadystatechange = function () {
+ //               if (this.readyState == 4 && this.status == 200){
+ //                   const data = this.responseText
+ //                   console.log(data)
+  //              }
+  //          }
+   //         xhr.open('GET','https://jsonplaceholder.typicode.com/todos',true )
+   //     xhr.send(); 
+ //}
+  // const loaddata = () => { 
+ //   const xhr = new XMLHttpRequest();
+ //   xhr.open('GET','https://jsonplaceholder.typicode.com/todos',true )
+ //  xhr.onreadystatechange = () => {
+ //      if (xhr.readyState == 4 && xhr.status == 200){
+  //         const data = xhr.responseText
+  //         document.getElementById("data").innerHTML = data;
+   //      }
+  //  }
+//xhr.send();
+ //}
+   
+ const loaddata = () => { 
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET','https://jsonplaceholder.typicode.com/todos',true )
+      xhr.onreadystatechange = () => {
+          if (xhr.readyState == 4 && xhr.status == 200){
+ 
+                 const todos = JSON.parse(xhr.responseText)
+                
+                 //const titles = todos.map(todo =>{
+                  //  return todo.title
+                            //})
+            //// insert at location here is ul
+            const titles = todos.map(todo => {
+                const li =document.createElement("li")
+                li.textContent = todo.title
+                document.getElementById("titles").appendChild(li)
+            })
+             //   console.log(titles)
+        }
+       }
+   xhr.send();
+    }
+   
+
+
+    </script>
+    
+</body>
+</html>

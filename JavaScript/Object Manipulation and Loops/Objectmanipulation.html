@@ -1,0 +1,213 @@
+<html>
+<head>
+    <title>Document</title>
+  </head>
+<body>
+    <script>
+   var data = {
+    id : 1,
+     name : "Tufail",
+    isEnggineer : false,
+    courses : ["c++", "Java","OOP"],
+    address : {
+        tehsil: "charsadda",
+        district : "peshwar"
+      }
+   }
+      document.write(data.id)
+  console.log(data.address.district)
+   console.log(data.address)
+   console.log(data.courses[0])
+
+
+
+    products = [
+    {
+        "id" : 1,
+        "title" : "tufail",
+        "gpa" : 3.7,
+        "age" : 23,
+    },
+    {
+        "id" : 2,
+        "title" : "amjad",
+        "rating" : 3.1,
+        "age" : 20,
+    },
+    
+    ]
+  
+   for ( let i = 0; i < 3; i++){
+    if ( products[i].age > 22 && products[i].rating > 3.5 ){
+      console.log(products[i].id)
+    }
+     }
+
+const person = [
+{
+  id: 1,
+  name: "Tufail",
+  age: 20,
+  gpa: 2.4,
+  isPass: false
+},
+{
+  id: 2,
+  name: "Amjad",
+  age: 23,
+  gpa: 2.5,
+  isPass: true
+},
+{
+  id: 3,
+  name: "Rashid",
+  age: 22,
+  gpa: 3.1,
+  isPass: false
+},
+{
+  id: 4,
+  name: "Hasin",
+  age: 18,
+  gpa: 3.2,
+  isPass: false
+},
+]
+
+ for ( let i = 0; i < person.length; i++){
+  if(person[i].isPass == true){
+    console.log(person[i].name)}
+  
+    else{
+          console.log(person[i].id)
+  }    }
+ 
+     loop Using
+
+ for (i = 0; i <= 10; i++){
+  
+  if (  i%2 == 0){
+    console.log("Even")
+    console.log(i)   
+  }
+   else{
+    console.log("odd")
+   console.log(i)
+  }  }
+
+
+ for ( let i = 0; i < 4; i++){
+  if (person[i].age > 20 && person[i].isPass){
+    console.log(person[i].name)
+    console.log(person[i].id)
+  }}
+
+  for ( let i = 0; i < 4; i++){
+  if (person[i].age >= 20 || person[i].isPass){
+    console.log(person[i].name)
+    console.log(person[i].id)
+  }}
+
+
+product = [
+{
+  id: 1,
+  title: "iphone14",
+  discription: "An Apple which is nothing like apple ", "price": 549,
+  discountPercentage: 12.96,
+  rating: 4.69,
+  stock: 94,
+  brand: "apple",
+  category: "SmartPhones",
+  thumbnail: "",
+  images: ["img1", "img2"]
+},
+{
+  id: 2,
+  title: "Ipad",
+  discription: "An Apple Ipad which is nothing like apple ", "price": 500,
+  discountPercentage: 15.74,
+  rating: 3.99,
+  stock: 90,
+  brand: "apple",
+  category: "Ipad",
+  thumbnail: "",
+  images: ["H", "H1", "H2","H3"]
+},
+{
+  id: 3,
+  title: "laptop",
+  discription: "An hp laptop is the best", "price": 1000,
+  discountPercentage: 10.89,
+  rating: 5,
+  stock: 50,
+  brand: "Hp",
+  category: "Laptops",
+  thumbnail: "1",
+  images: ["T", "T1", "T2","T3","T4"]
+},
+]
+
+for (let i = 0; i < product.length; i++){
+  if (product[i].stock > 50){
+  console.log(product[i].title)
+  console.log(product[i].id)
+  console.log(product[i].stock)
+  console.log("Banned")}
+  else{
+    console.log(product[i].title)
+    console.log(product[i].id)
+    console.log(product[i].stock)
+    console.log("Allowed")
+    console.log("Wajid Banned on Tufail Zaman's Room ,King of  World ")
+ 
+
+
+  // Averge rating and price of all product
+  // All brand names along with Titles and Unit price
+  // Print all Categories
+  // print titles, ids, price and images (each individual image)
+  // All products with no thumbnail image and more than 3 images available
+  
+  console.log("Answer to question No 1")
+  for ( let i = 0; i < product.length; i++){
+  console.log(product[i].price)
+  console.log(product[i].rating)
+  }
+
+  console.log("Answer to Question No 2")
+  for ( let i = 0; i < product.length; i++){
+    console.log(product[i].brand)
+    console.log(product[i].title)
+    console.log(product[i].price)
+  }
+console.log("Answer to question no 3")
+for ( let i = 0; i < product.length; i++){
+  console.log(product[i].category)
+}
+
+console.log("Answer to question no 4")
+for ( let i = 0; i < product.length; i++){
+  const a = product[i].images.length
+  for ( let j = 0; j < a; j++){
+    console.log(product[i].id)
+    console.log(product[i].title)
+    console.log(product[i].price)
+    console.log(product[i].images[j])
+  }
+}
+console.log("Answer to question no 5")
+for ( let i = 0; i < product.length; i++) {
+  let a = product[i].images.length
+  let b = product[i].thumbnail.length
+  if (b == 0 && a >= 3){
+    console.log(product[i].id)
+    console.log(product[i].title)
+  }
+  
+}
+
+
+</script>
+</body>
+</html>
