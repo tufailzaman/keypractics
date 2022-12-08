@@ -21,17 +21,17 @@
    input{
     background-color: lightgray;
    }
-   p{
-    font-size: 20px;
-    font-style: italic;
-    color: pink;
-    background-color: blueviolet;
-   }
    select{
     background-color: lightgray;
 
    }
    /* ID Selector */
+#p{
+background-color: gray;
+    color:chartreuse;
+    font-size: larger;
+    font-style: italic;
+}
    #footer{
     background-color: brown;
     border: 1px solid black;
@@ -39,7 +39,7 @@
     height: 40px;
     text-align: center;
     color:yellow;
-    font-size: larger;
+    font-size:x-large;
     font-style: italic;
     margin-top: 10px;   
 

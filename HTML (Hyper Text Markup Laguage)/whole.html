@@ -7,7 +7,87 @@
         <link rel="shortcuticon" href="" type="image/icon" />
         <link rel="stylesheet" href="../CSS (Cascadding Style Sheet)/Keystyle.css" type="text/css" />
         <style>
+            /*  ID Slector */
+            #div{
+                background-color:red;
+                color:yellow;
+                font-style: italic;
+                font-size: 20px;
+                text-align: center;
+            }
+       
 
+        
+        /* Class Selector */
+        .list{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: chartreuse;
+            font-size: large;
+            font-style: italic;
+            color: brown;
+        }
+        .form{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: yellow;
+            border: 1px;
+            border-color: red;
+            border-style: groove;
+        }
+/* Tag Selector  */
+
+   sub{
+    color: darkblue;
+    font-size: larger;
+   }
+   sup{
+    color: darkgreen;
+    font-size: larger;
+   }
+
+   form{
+         background-color: blue;
+         font-style: italic;
+         font-size: medium;
+         margin-top: 10px;
+        }
+        hr{
+            border-width: 2px;
+            color: red;
+            border-color:red;
+            
+        }
+        h1{
+            color: aquamarine;
+            font-style: italic;
+            font-size: x-large;
+        }
+        h2{
+            color: red;
+            font-size:x-large;
+            font-style: italic;
+        }
+        h3{
+            color:brown;
+            font-size:x-large;
+            font-style: italic;
+        }
+        h4{
+            color:green;
+            font-size:x-large;
+            font-style: italic;
+        }
+        h5{
+            color:yellow;
+            font-size:x-large;
+            font-style: italic;
+        }
+        h6{
+            color:coral;
+            font-size:x-large;
+            font-style: italic;
+        }
         </style>
     </head>
     <body>
@@ -37,13 +117,13 @@ Amjad<sub>Khan</sub><br /><h3>
     1) order list (ol)
     2) Unorder list (ul)-->
 <!-- type = "1,A,a,I,i" -->
-    <ol  start="2" type="i">
+    <ol  start="2" type="i" class="list">
         <li>Pakistan</li>
         <li>India</li>
         <li>Iran</li>
     </ol>
 <!-- type ="circle, square , default,none,disc" -->
-     <ul type ="none">
+     <ul type ="none" class="list">
         <li>Pakistan</li>
         <li>India</li>
         <li>Saudi</li>
@@ -55,7 +135,7 @@ Amjad<sub>Khan</sub><br /><h3>
         Tufail Zaman
        </center>
        <!--Paragraph  -->
-      <p align = "justify">
+      <p align = "justify" id="p">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, 
           dignissimos labore ab minus earum, dolorum unde dolorem eaque nemo impedit rem quia temporibus quo adipisci incidunt placeat,
            consectetur accusamus error.
@@ -118,7 +198,7 @@ unpair tag are input,img,br etc..
  <img src="" width="200" height="200" allign="" />
  
  <!-- Form Tag -->
- <table border="1">
+ <table class="form">
     <tr>
         <th>
  <form>
@@ -147,7 +227,7 @@ unpair tag are input,img,br etc..
 </tr>
 </table>
 <!-- div tag along with inline css -->
-<div style="border:1px solid black">
+<div style="border:1px solid black " id="div">
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt officiis harum deserunt explicabo corrupti nulla eius, praesentium et minima expedita ratione consectetur quisquam, id iste? Eveniet provident non illum.
     </p>
