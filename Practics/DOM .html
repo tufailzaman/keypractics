@@ -372,7 +372,7 @@ const Search = () => {
 
 
 ///// Async Function
-const btn  = () =>{
+const btn9  = () =>{
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
             console.log("Hasin Khan")
@@ -382,7 +382,7 @@ const btn  = () =>{
 
 }
 
-const btn1  = () =>{
+const btn5  = () =>{
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
             console.log("Rashid Khan")
@@ -417,16 +417,57 @@ const btn4  = () =>{
 }
 
 const mainbtn = async() => {
-    await btn();
+    await btn5();
     await btn1();
     await btn2();
     await btn3();
     await btn4();
 }
-    </script>
+   
 
-      <!-- Async Fuction Button 
-         <button onclick="mainbtn()">Click</button> -->
+
+////////  Ajex (Only for understanding)  and Fetch (using)
+
+const zaman = () => {
+
+fetch("https://api.github.com/users")
+.then(res => res.json())
+.then(data => {
+    //console.log(data)
+
+const search = document.getElementById("search1").value
+
+    let users = `<table border="1" width="900">`
+        users +=  `<thead>
+            <tr>
+                <th>Id</th>
+                <th>User Name</th>
+                <th>Account Url</th>
+                <th>Image</th>
+            </tr> </thead>`
+            users += `<tbody>`
+        data.forEach(v => {
+            if(v.id == search){
+                users += `<tr>
+                <td>${v.id}</td>
+                <td>${v.login}</td>
+                <td> ${v.html_url} </td>
+                <td width ="150"><a href="${v.avatar_url }" ><img src = "${v.avatar_url }" width = "150" height ="150"/></a></td>
+
+            </tr>` }   
+        })
+            users += `</tbody>`
+            users += `</table>`
+document.getElementById("fetch").innerHTML = users
+        })
+    }
+</script>
+<input type="number" onchange="zaman()" name="search1" id="search1" />
+<button onclick="zaman()">Search</button>
+   <div id = "fetch"></div>
+
+      <!-- Async Fuction Button -->
+         <!-- <button onclick="mainbtn()">Click</button>  -->
 
 
 <!--   Search Button Searching by characters 
