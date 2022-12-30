@@ -370,28 +370,85 @@ const Search = () => {
 
 }
 
+
+///// Async Function
+const btn  = () =>{
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Hasin Khan")
+            resolve();
+        },3001)
+    })
+
+}
+
+const btn1  = () =>{
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Rashid Khan")
+            resolve();
+        },3000)
+    })
+}
+
+const btn2  = () =>{
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Habib Ur Rehman")
+            resolve();
+        },2000)
+    })
+}
+const btn3  = () =>{
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Amjad Khan")
+            resolve();
+        },5000)
+    })
+}
+const btn4  = () =>{
+    return new Promise ((resolve, reject) => {
+        setTimeout(() => {
+            console.log("Tufail Zaman")
+            resolve();
+        },1000)
+    })
+}
+
+const mainbtn = async() => {
+    await btn();
+    await btn1();
+    await btn2();
+    await btn3();
+    await btn4();
+}
     </script>
-<input onchange="Search()" id="Search" type="search" />
+
+      <button onclick="mainbtn()">Click</button>
+
+
+<!-- <input onchange="Search()" id="Search" type="search" />
 <button onclick="Search()">Search</button>
-    <div id="div3"></div> 
+    <div id="div3"></div>  -->
 
  
-    <button onclick="list()">Show List</button>
-    <div id="div2"></div> 
+    <!-- <button onclick="list()">Show List</button>
+    <div id="div2"></div>  -->
 
-     <button onclick="showdata()">Show Data</button>
+     <!-- <button onclick="showdata()">Show Data</button>
         <input type="number" id="search" onchange="search()" name="search" />
 <button onclick="search()">Search</button>
-<div id = "div1"></div>
+<div id = "div1"></div> -->
 
 
-     <button onclick="quiz()">Next</button>
+     <!-- <button onclick="quiz()">Next</button>
 <button onclick="load()">Click</button>
 <button onclick="ftnn()">Fuction</button>
 <div id ="1"></div>
 <div id ="2"></div>
 <div id ="3"></div>
-<p id="para" align="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quam.</p>
+<p id="para" align="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quam.</p> -->
 </body>
 
 </html>
