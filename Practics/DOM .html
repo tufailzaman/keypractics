@@ -1,0 +1,397 @@
+<html>
+
+<head>
+    <title>Java Script</title>
+
+</head>
+
+<body>
+    <!-- <button onclick = "btn()" > Click </button>
+            <input type="search" onChange = "input()"  />
+            <button onclick = "input()" > Search </button>
+            <input onChange = "inp()" id="search" name="search" type="search"/>
+            <button onmouseover = "admission()" > Search </button>
+            <button onmouseout = "admission()" > Search </button>
+            <button onmousemove = "admission()" > Search </button>
+            <div id = "div"></div>
+    -->
+
+    <!-- 
+         Function of two types
+    1) Function Declaration
+    2) Arrow Function  ---  Best  
+-->
+
+    <script>
+
+        // Function Declaration
+
+        //    function btn(){
+        //        prompt("bachsha hatarnak dee","Tufail Zaman")
+        //        console.log("clicked")
+        //        alert("bachsha hatarnak dee ")
+        //    }
+
+        //    // Arrow Function  Best way to use Arrow fuction
+
+        //    const input = () => {
+
+        //          console.log("Tufail Zaman")
+
+        //    }
+
+        //      //// Block of code ot print a value in console, taken from infield
+
+        //      const inp = () => {
+        //        console.log(document.getElementById("search").value)
+        //      }
+
+        //      const admission = () => {
+        //      let  addm = `<select>
+        //                      <option>Software</option>
+        //                      <option>cs</option>
+        //                      <option>Maths</option>
+        //      </select>`
+        //         document
+        //         .getElementById("div") 
+        //         .innerHTML = addm
+        //      }
+
+        //   ///// Event Finish
+
+        //   /////// DOM Start
+
+
+        const products = [
+            {
+                id: 1,
+                titlt: "Apple",
+                price: 109,
+                description: "good than andriod"
+            },
+
+            {
+                id: 2,
+                titlt: "Infinix",
+                price: 100,
+                description: "good than andriod"
+            },
+
+            {
+                id: 3,
+                titlt: "vivo",
+                price: 150,
+                description: "good than andriod"
+            },
+            {
+                id: 4,
+                titlt: "Nokia",
+                price: 50,
+                description: "good than andriod"
+            },
+            {
+                id: 5,
+                titlt: "Tecno",
+                price: 200,
+                description: "good than andriod"
+            },
+            {
+                id: 6,
+                titlt: "Realme",
+                price: 210,
+                description: "good than andriod"
+            },
+            {
+                id: 7,
+                titlt: "Oppo",
+                price: 220,
+                description: "good than andriod"
+            },
+            {
+                id: 8,
+                titlt: "Samsung",
+                price: 230,
+                description: "good than andriod"
+            },
+            {
+                id: 9,
+                titlt: "Huawei",
+                price: 240,
+                description: "good than andriod"
+            },
+            {
+                id: 10,
+                titlt: "Google Pixel",
+                price: 260,
+                description: "good than andriod"
+            },
+            {
+                id: 11,
+                titlt: "Tufail Zaman",
+                price: 570 + "  only for Girls",
+                description: "Nice Person"
+            },
+            {
+                id: 12,
+                titlt: "One Plus",
+                price: 280,
+                description: "good than andriod"
+            },
+            {
+                id: 13,
+                titlt: "Sony",
+                price: 290,
+                description: "good than andriod"
+            },
+            {
+                id: 14,
+                titlt: "LG",
+                price: 300,
+                description: "good than andriod"
+            },
+            {
+                id: 15,
+                titlt: "HTC Mobile",
+                price: 310,
+                description: "good than andriod"
+            },
+            {
+                id: 16,
+                titlt: "Lenovo",
+                price: 320,
+                description: "good than andriod"
+            },
+            {
+                id: 17,
+                titlt: "Panasonic",
+                price: 330,
+                description: "good than andriod"
+            },
+            {
+                id: 18,
+                titlt: "Q mobile",
+                price: 340,
+                description: "good than andriod"
+            },
+            {
+                id: 19,
+                titlt: "Acer Moblie",
+                price: 350,
+                description: "good than andriod"
+            },
+            {
+                id: 20,
+                titlt: "ZTE Mobile",
+                price: 360,
+                description: "good than andriod"
+            },
+        ]
+
+        const load = () => {
+
+
+            let table = `<table border="1">
+                 <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>`
+
+            table += `<tbody>`
+            for (let i = 0; i < products.length; i++) {
+                //         products.forEach((v) => {
+                table += `<tr>
+                    <td>${products[i].id}</td>
+                    <td>${products[i].titlt}</td>
+                    <td>${products[i].price}</td>
+                    <td>${products[i].description}</td>
+                </tr>
+            </tbody>`
+            }
+            //   })        
+            table += `</table>`
+
+            document
+                .getElementById("1").innerHTML = table
+        }
+        //////// Arrow  Function
+
+        const  ftnn = () => {
+                         document.getElementById("para").setAttribute("align","right" )
+         
+            const p =         document.createElement("p")   
+                p.id ="abc"
+            p.innerHTML = "Rashid Is my brother like friend"
+           const place = document.getElementById("2")
+           place.appendChild(p)
+
+         const t =  document.createElement("p")
+         t.innerHTML = "Tufail Zaman"
+         const lp = document.getElementById("3")
+         lp.appendChild(t)
+        }
+        const students = [
+        {
+            id:1,
+        name:"rashid"
+        },
+        {
+            id:1,
+            name:"rashid"
+        },
+
+        ]
+        let i = 0;
+        const quiz = () => {
+            do
+           {
+                console.log(i)
+                i++
+            }
+            while(i>10)
+        }
+        const search = () => {
+            const search = document.getElementById("search").value
+
+
+            let tufail = `<table border="1" width="500">`
+            products.forEach(v => {
+                if (v.id == search) {
+                    tufail += `<thead>
+                        <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+    </tr></thead> 
+    <tbody>`
+
+
+                    tufail += `<tr>
+    <td>${v.id}</td>
+    <td>${v.titlt}</td>
+    <td>${v.description}</td>
+    <td>${v.price}</td>
+</tr>`
+                }
+            })
+            tufail += `</tbody>`
+            tufail += `</table>`
+
+            document
+                .getElementById("div1").innerHTML = tufail
+
+        }
+
+
+        const showdata = () => {
+
+            let data = `<table border="1" width="500">`
+            data += `<thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>`
+            data += `<tbody>`
+            products.forEach(v => {
+                data += `<tr>
+                <td>${v.id}</td>
+                <td>${v.titlt}</td>
+                <td>${v.description}</td>
+                <td>${v.price}</td>
+            </tr>`
+            })
+
+            data += `</tbody>`
+            data += `</table>`
+            document
+                .getElementById("div1").innerHTML = data
+
+        }
+
+        const list = () => {
+            console.log("t")
+            let li = `<ol>
+                <li>Id </li>
+                <li>Title</li>
+                <li>Price</li>
+                `
+            products.forEach(v => {
+                li += `  <li>ID </li>
+                   <li>${v.id} </li>
+                        <li>Title </li>
+                        <li>${v.titlt} </li>
+                        <li>Price </li>
+                        <li>${v.price} </li>`
+            })
+            li +=   `</ol> `
+                    
+                  document
+                     .getElementById("div2").innerHTML = li
+}
+
+
+const Search = () => {
+    const search = document.getElementById("Search").value
+
+
+    let tufail = `<table border="1" width="500">`
+    products.forEach(v => {
+        if (v.titlt == search) {
+            tufail += `<thead>
+                <tr>
+<th>ID</th>
+<th>Title</th>
+<th>Description</th>
+<th>Price</th>
+</tr></thead> 
+<tbody>`
+
+
+            tufail += `<tr>
+<td>${v.id}</td>
+<td>${v.titlt}</td>
+<td>${v.description}</td>
+<td>${v.price}</td>
+</tr>`
+        }
+    })
+    tufail += `</tbody>`
+    tufail += `</table>`
+
+    document
+        .getElementById("div3").innerHTML = tufail
+
+}
+
+    </script>
+<input onchange="Search()" id="Search" type="search" />
+<button onclick="Search()">Search</button>
+    <div id="div3"></div> 
+
+ 
+    <button onclick="list()">Show List</button>
+    <div id="div2"></div> 
+
+     <button onclick="showdata()">Show Data</button>
+        <input type="number" id="search" onchange="search()" name="search" />
+<button onclick="search()">Search</button>
+<div id = "div1"></div>
+
+
+     <button onclick="quiz()">Next</button>
+<button onclick="load()">Click</button>
+<button onclick="ftnn()">Fuction</button>
+<div id ="1"></div>
+<div id ="2"></div>
+<div id ="3"></div>
+<p id="para" align="center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quam.</p>
+</body>
+
+</html>

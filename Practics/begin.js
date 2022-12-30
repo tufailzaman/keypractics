@@ -144,3 +144,6 @@
 
 //    var search = 201168;
 // console.log(students.filter(v => v.rollno == search))
+const list = [1,2,3,4,8]
+console.log(typeof(list))
+//console.log("TUfail Zaman")
