@@ -16,12 +16,12 @@
           // console.log(`Lat ${lat} Long ${long}`)
           fetch(`https://us1.locationiq.com/v1/reverse.php?
           key=pk.2ce05a50d1ca31e503b2a60e82d6a395&lat=${lat}&lon=${long}&format=json`)
-          .then(res => res.json())
+          .then(res => res.json())${v.avatar_url }
           .then(json => {
 
-         //   const street = json.results[0].locations[0].street;
-         //   console.log(street);
- //           console.log(json)
+           const street = json.results[0].locations[0].street;
+           console.log(street);
+       //     console.log(json)
 
  //console.log(json.address)
  console.log(json.address.state)
